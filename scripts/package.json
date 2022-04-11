@@ -1,5 +1,9 @@
 {
-  "name": "pvpbooster-website-main",
+  "name": "@darl1ng-design/darl1ng-design.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darl1ng-design/darl1ng-design.github.io"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
@@ -7,6 +11,7 @@
     "dev": "nodemon script.js",
     "express": "express"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -19,4 +24,7 @@
     "nodemon": "^2.0.15",
     "sass": "^1.49.9"
   }
-}
+  }
+
+    
+  
