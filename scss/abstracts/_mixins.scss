@@ -1,0 +1,84 @@
+@use './variables' as *;
+@use './functions' as *;
+@mixin bgProperties{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+@mixin burger($right, $top, $image){
+    background-image: $image;
+    background-repeat: no-repeat;
+    background-position: top center;
+    right: $right;
+    top:$top;
+    height:5vh;
+    max-width:30%;
+    position: fixed;
+}
+@mixin nav-slide-in($value){
+    min-height:100vh;
+    width:15%;
+    display: flex;
+    align-items: center;
+    right: $value;
+}
+@mixin booster-text($prop){
+    width:40%;
+    padding-left:1.4rem;
+    color:$maintext;
+    transform: translateX($prop);
+    transition: opacity 600ms ease-in, 
+    transform 600ms ease-in; 
+}
+@mixin booster-look($bg-img, $prop){
+    width:38.5%;
+    background-image: $bg-img;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    -webkit-box-shadow: 0px 0px 26px 1px rgba(0, 158, 18, 1);
+-moz-box-shadow: 0px 0px 26px 1px rgba(0, 158, 18, 1);
+box-shadow: 0px 0px 26px 1px rgba(0, 158, 18, 1);
+    transform: translateX($prop);
+    transition: opacity 600ms ease-in, 
+    transform 600ms ease-in; 
+    height:49vh;
+    border-radius: 20px;
+}
+@mixin booster-text-p{
+    letter-spacing: doubleVal(0.4px);
+    top:11.5vh;
+    position: relative;
+    margin:2rem;
+    font-size:1.65rem;
+    color: $paragraph;
+}
+@mixin h6($right){
+    position: absolute;
+    top:6vh;
+    font-size:1.1rem;
+    text-transform: uppercase;
+    right:$right;
+    letter-spacing: doubleVal(1px);
+    color:$borderAnimColor;
+}
+@mixin h2($right){
+     position:absolute;
+        top:9vh;
+        right:$right;
+        letter-spacing: doubleVal(1px);
+        font-size:3rem;
+        color:$maintext;
+}
+@mixin h3{
+    cursor: pointer;
+            font-size:2.5rem;
+            letter-spacing: doubleVal(0.5px);
+            display:inline-block;
+            color: $maintext;
+}
+@mixin vertical-line{
+ background-color: $maintext; 
+ min-height:20vh;
+ width:0.05%;  
+}

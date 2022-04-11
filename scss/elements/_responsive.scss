@@ -1,0 +1,42 @@
+@use '../abstracts';
+@media (max-width: 400px){
+.logo{
+    width:100%;
+    min-height:8vh;
+    background-color: red;
+img{
+    top:1vh;
+    height:5vh;
+    width:100%;
+    left:9%;
+}
+}
+.booster-container{
+    width:80%;
+    left:6%;
+    min-height: 90vh;
+.text{
+    padding: 0.5rem;
+    width:90%;
+    height:18vh;
+    left:10%;
+.mini-logo{
+    font-size:1.3rem;
+}
+h2{
+    font-size:2rem;
+}
+p{
+    font-size: 0.8rem;
+}
+}
+.scroll-to-offer-btn{
+    width: 50%;
+    font-size:0.8em;
+    letter-spacing: doubleVaL(1px);
+    top:47vh;
+    left:30%;
+    height:1vh;
+}
+}
+}
