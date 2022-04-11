@@ -1,0 +1,70 @@
+@use '../abstracts' as *;
+.booster-container{
+    width:90%;
+    height:100vh;
+    position: relative;
+    right:5%;
+    left: 5%;
+    .text{     
+        padding:0.3rem;
+        width:40%; 
+        position: absolute;
+        min-height:10vh; 
+        text-align: center;
+        top: 30vh;
+        left:30%;
+        right:30%;
+        color: $maintext;
+        .mini-logo{
+            font-size: 2.3rem;
+        }
+        h2{
+            font-size:3rem;
+            letter-spacing: doubleVal(1px);
+            .pvp{
+                color: $maintext;
+              }
+            .booster{
+              color: $borderAnimColor;
+            } 
+        }
+        p{
+            padding:0.2rem;
+            color:$paragraph;
+            font-weight:100;  
+            font-size:1.1rem;   
+        }
+    }
+    .img-bg{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        min-height:10vh;
+    }
+    .scroll-to-offer-btn{
+        position: absolute;
+        width:12%;
+        min-height:5vh; 
+        top: 55vh;
+        right:44%;
+        left:44%;
+        text-align: center;
+        padding:0.75rem;
+        border:2px solid $maintext;
+        border-radius: 10px;
+        transition: 400ms ease-in-out;
+        
+        a{
+            display: block;
+            color: $maintext;
+            text-decoration: none;
+            letter-spacing: doubleVal(0.5px);
+        }
+        &:hover{
+            opacity: 0.8;
+            transform: translateY(10%);
+        }
+}
+
+}
