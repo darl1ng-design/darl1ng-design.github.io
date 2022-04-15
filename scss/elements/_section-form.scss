@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+.section-form{
+    top:100vh;
+     background-image:url(/img/constellation.svg) ;
+    width:100%;
+    min-height:80vh;
+    position: relative;
+    h6{
+        @include h6(46%);
+    }
+    h2{
+        @include h2(41%);
+    }
+}
