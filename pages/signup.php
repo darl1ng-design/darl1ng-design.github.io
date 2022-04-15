@@ -8,13 +8,13 @@
 
    if(emptyInput($nick, $email, $license_key, $pwd) !== false){
     //header("location: ./main.php?error=emptyinput");
-    echo json_encode('Error: empty input');
+    echo 'Error: empty input';
     exit();
    }
 
    elseif (userExists($conn, $nick, $email, $license_key, $pwd) !== false){
     //header("location: ./main.php?error=userexists");
-    echo json_encode('Error: user exists');
+    echo 'Error: user exists';
     exit();
    }
 ?>
